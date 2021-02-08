@@ -1,0 +1,26 @@
+list0 = [] #empty LIST
+print(list)
+
+list1 = [5, 'Stroka', True, 5.21, 7]
+print(list1)
+print(list1[1], " + from index 1")
+
+list1.append('Hello sweetheart')
+print("appended new string to list1:\n", list1)
+
+list2 = [4, 9, 8]
+list1.extend(list2)
+print( "exxtended with another list:\n",list1)
+
+list1.remove(5) #removes po znacheniyu
+print("removed 5,\n", list1)
+list1.pop(0)
+print("removed one by index,\n", list1)
+list1.reverse() #reverse is made outside of the print
+print("reverse:\n", list1)
+#list1.sort() #sort as well as reverse
+list2.sort()
+print('lists with non-ints makes error if sorted\n'
+      'list2 sorted with integers:\n', list2)
+print('list[start:end:step], \nlist[::] + all\n',list1[::],
+      '\nlist[::3] every third:\n',list1[::3])

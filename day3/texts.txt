@@ -1,0 +1,35 @@
+
+
+
+MODULE 3.x
+SELECT * FROM `orders` 
+JOIN `users` ON orders.user_id = users.id
+JOIN `items` ON orders.item_id = items.id
+
+SELECT users.name, items.name FROM `orders` 
+JOIN `users` ON users.id = orders.user_id
+JOIN `items` ON items.id = orders.item_id
+
+
+SELECT users.name AS 'Buyer', items.name AS 'Product' FROM `orders` 
+JOIN `users` ON users.id = orders.user_id
+JOIN `items` ON items.id = orders.item_id
+
+
+SELECT users.name AS 'Buyer', SUM(items.price) AS 'Total Check' FROM `orders` 
+JOIN `users` ON users.id = orders.user_id
+JOIN `items` ON items.id = orders.item_id
+GROUP BY orders.user_id
+
+
+SELECT users.name AS 'Buyer', SUM(items.price) AS 'Total Check' FROM `orders` 
+JOIN `users` ON users.id = orders.user_id
+JOIN `items` ON items.id = orders.item_id
+GROUP BY orders.user_id
+HAVING SUM(items.price) > 450
+
+
+SELECT CONCAT('Buyer: ', users.name, 'Total Price: ', SUM(items.price)) AS 'WHOle information' FROM `orders` 
+JOIN `users` ON users.id = orders.user_id
+JOIN `items` ON items.id = orders.item_id
+GROUP BY orders.user_id

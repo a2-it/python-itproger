@@ -1,0 +1,23 @@
+     def whoWins(player1, player2):
+            if player1.value == 1:
+                if player2.value == 1:
+                    return 'ничья'
+                elif player2.value == 2:
+                    return '{} выиграл'.format(player2)
+                else:
+                    return '{} выиграл'.format(player1)
+            if player1.value == 2:
+                if player2.value == 1:
+                    return '{} выиграл'.format(player1)
+                elif player2.value == 2:
+                    return 'ничья'
+                else:
+                    return '{} выиграл'.format(player2)
+            if player1.value == 3:
+                if player2.value == 1:
+                    return '{} выиграл'.format(player2)
+                elif player2.value == 2:
+                    return '{} выиграл'.format(player1)
+                else:
+                    return 'ничья'
+
