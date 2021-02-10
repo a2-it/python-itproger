@@ -1,3 +1,7 @@
+///////////////////////////////////////////////////////////////////////
+UNITTEST UNITTEST UNITTEST UNITTEST UNITTEST UNITTEST UNITTEST UNITTEST
+///////////////////////////////////////////////////////////////////////
+
 Изначально пишешь тест. потом на основе тестов сам файл
 * "test_" должна иметь функция тесттирования в начале
 * у меня выходила ошибка так как я создао файл/класс math.py
@@ -10,3 +14,13 @@
     ++++if __name__ == '__main__':
     ++++    unittest.main()
     теперь можно запускать как = python test_mathh.py
+* .gitignore можрно создать с коммандлайна самого гит через touch .gitignore
+
+/////////////////////////////////////////////////////////////////////////////
+PYTEST PYTEST PYTEST PYTEST PYTEST PYTEST PYTEST PYTEST PYTEST PYTEST PYTEST
+/////////////////////////////////////////////////////////////////////////////
+
+pytest pytest_mathh.py
+pytest pytest_mathh.py -v   for full inf about test
+py.test запускаете полность все тесты которые есть в программе
+py.test -v IfUKWIM
