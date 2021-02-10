@@ -1,3 +1,4 @@
+import pytest
 import unittest
 import user
 
@@ -24,6 +25,7 @@ class TestUser(unittest.TestCase):
     def test_printAll(self):
         self.assertEqual(self.obj.printAll(), "Bot возрастом 35")
 
+    @pytest.mark.slow
     def test_printToFile(self):
         self.obj.printToFile('text.txt')
         res = self.obj.readFromFile('text.txt')

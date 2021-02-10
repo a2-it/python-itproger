@@ -23,4 +23,13 @@ PYTEST PYTEST PYTEST PYTEST PYTEST PYTEST PYTEST PYTEST PYTEST PYTEST PYTEST
 pytest pytest_mathh.py
 pytest pytest_mathh.py -v   for full inf about test
 py.test запускаете полность все тесты которые есть в программе
-py.test -v IfUKWIM
+py.test -v детализация
+pytest -v -k "add" выполняется тест таких функций где в имени есть -add-
+* общее имя, для того что бы обращаться при выполнении теста
+    @pytest.mark.add
+        pytest - v -m add
+    такие марки нужно сохранить в отдельном файле формата ini
+*pytest модет передать параметры к фунция
+        @pytest.mark.parametrize('num1, num2, res', [
+        (5,5,10)
+        ])
