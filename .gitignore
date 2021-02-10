@@ -1,4 +1,7 @@
-__pycache__
+__pycache__/
+
+.pytest_cache/
+venv/
 
 # Ignore the node_modules directory
 node_modules/
