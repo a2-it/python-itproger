@@ -4,19 +4,19 @@ __pycache__/
 venv/
 
 # Ignore the node_modules directory
-#node_modules/
+node_modules/
 
 # Ignore Logs
-#logs
-#*.log
+logs
+*.log
 
 # Ignore the build directory
-#/dist
+/dist
 
 # The file containing environment variables 
-#.env
+.env
 
 # Ignore IDE specific files
-#.idea/
-#.vscode/
-#*.sw*
+.idea/
+.vscode/
+*.sw*
