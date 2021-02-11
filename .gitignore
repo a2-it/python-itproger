@@ -17,6 +17,6 @@ venv/
 #.env
 
 # Ignore IDE specific files
-.idea/
-.vscode/
-*.sw*
+#.idea/
+#.vscode/
+#*.sw*
