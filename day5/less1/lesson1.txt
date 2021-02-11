@@ -1,0 +1,26 @@
+KIVY
+* we first install kivy to interpreteres
+    after we import
+            from kivy.app import App
+            from kivy.uix.button import Button
+            from kivy.uix.boxlayout import BoxLayout
+    use box layout to append more buttons
+* все обьекты киви пишутся в специальном файле формата kv
+    название файла  == название класса общего  ducky.kv
+
+
+FloatLayout:
+	#orientation: 'vertical'
+	#padding: '30sp'
+	#spacing: '10sp'
+
+	Button:
+		text: 'Hello'
+		#pos: 200,300
+		pos_hint: {'x':0, 'top':1}
+		#size: 100,80
+		size_hint: 0.2, 0.3
+
+#	Button:
+#		text: 'Hi'
+#		size_hint: 0.7, 0.5

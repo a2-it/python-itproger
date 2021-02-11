@@ -1,0 +1,28 @@
+<Container>:
+
+    orientation: 'vertical'
+    padding: 30
+    spacing: 30
+    texts: text_input   #в класе контэйнер к ним будут обращаться именами texts, labels
+    labels: label_text
+
+    TextInput:
+        text: ''
+        id: text_input
+        multiline: False
+        font_size: 50
+
+    Label:
+        text: 'Просто Текст'
+        id: label_text
+        font_size: 40
+
+    FloatLayout:
+        Button:
+            text: 'Leggo'
+            font_size: 40
+            size_hint: 0.5, 1
+            pos_hint: {'center_x': 0.5, 'y':0}
+            on_release:
+                #self.text = 'kettik barin tasta'
+                root.changes()
