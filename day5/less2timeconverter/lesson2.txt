@@ -1,0 +1,17 @@
+GridLayout это специальный слой который разрешит ставить обьекты
+    в определенные ряды и столбы, можем сказать сколько рядов и столбцов
+AnchorLayout: прикрепляет обьект к определенной части экрана, к шапке или боковой панели итд итп
+8   from kivy.core.window import Window
+    Window.size = (360, 640) #in main определили размер содаваемого окна
+
+*   <MyOwnLabel@Label>
+    font_size: '25sp'
+    halign: 'left'
+    valign: 'middle'
+    text_size: self.size
+                            это шаблон0, прописывется до <контейнера> что бы не прописывать каждый раз
+
+*   padding: [20, 0, 0, 0]  left, top, right, bottom
+
+
+

@@ -1,0 +1,81 @@
+<MyOwnLabel@Label>
+    font_size: '25sp'
+    halign: 'left'
+    valign: 'middle'
+    text_size: self.size
+
+
+
+<Container>
+    rows: 3
+    inputs: text_input
+    hours: label_hours
+    minutes: label_minutes
+    seconds: label_seconds
+    mseconds: label_mseconds
+    weeks: label_weeks
+
+    AnchorLayout:
+        anchor_y: 'top'
+        size_hint: 1,0.15
+
+        TextInput:
+            id: text_input
+            text: ''
+            font_size: '45sp'
+            input_filter: 'int'
+            input_type: 'number'
+            multiline: False
+
+    GridLayout:
+        cols: 2
+        padding: [20, 0, 0, 0]
+
+
+        BoxLayout:
+            orientation: 'vertical'
+            MyOwnLabel:
+                text: 'Часы'
+
+            MyOwnLabel:
+                text: 'Минуты'
+
+            MyOwnLabel:
+                text: 'Секунды'
+
+            MyOwnLabel:
+                text: 'МилиСекунды'
+
+            MyOwnLabel:
+                text: 'Недели'
+
+        BoxLayout:
+            size_hint: 0.5, 1
+            orientation: 'vertical'
+            MyOwnLabel:
+                text: '0'
+                id: label_hours
+
+            MyOwnLabel:
+                text: '0'
+                id: label_minutes
+
+            MyOwnLabel:
+                text: '0'
+                id: label_seconds
+
+            MyOwnLabel:
+                text: '0'
+                id: label_mseconds
+
+            MyOwnLabel:
+                text: '0'
+                id: label_weeks
+
+    BoxLayout:
+        size_hint: 0.9, 0.15
+        padding: [30, 20, 30, 20]
+        Button:
+            text: 'Convert dat time'
+            on_release:
+                root.convert()
