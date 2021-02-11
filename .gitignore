@@ -4,7 +4,7 @@ __pycache__/
 venv/
 
 # Ignore the node_modules directory
-node_modules/
+#node_modules/
 
 # Ignore Logs
 logs
