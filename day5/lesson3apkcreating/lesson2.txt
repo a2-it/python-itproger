@@ -1,0 +1,6 @@
+APK CREATING
+* как поменять стиль,
+    добавь интерпретер kivymd
+        а потом from kivymd.theming import ThemeManager
+        добавльяеи на конверттервапп theme_cls
+        на .kv меням обьекты на kivymd
